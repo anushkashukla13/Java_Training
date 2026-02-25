@@ -37,7 +37,7 @@ public class fun {
 
 
 
-        //frequency of each character in a string
+        //frequency of each character in a string 
         // String s1= "helloo";
         // int count=0;
 

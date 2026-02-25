@@ -40,6 +40,15 @@ public class question1 {
     //     System.out.println("Not Palindrome");
     // }
 
-    
+    // bitwise
+//     int a=123;
+//     if((a&1)==0){
+//         System.out.println("even");
+//     }
+//     else{
+//         System.out.println("odd");
+//     }
+
+
     }    
 }

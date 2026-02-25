@@ -1,8 +1,8 @@
 // class student{
 
-//     int rollno;
-//     String name;
-//     int a;
+    // int rollno;
+    // String name;
+    // int a;
     // public student(){
     //     System.out.println("constructor");
     // }
