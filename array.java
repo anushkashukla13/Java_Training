@@ -262,6 +262,28 @@ public class array {
         // }
 
 
-        
+        //wap which will take an array as input from user and move all zeros of the array to the right side of the array and return the non zero element in the same order
+        int arr[]={1,0,2,0,3,0,4,5};
+        int j=0;
+        for(int i=0;i<arr.length;i++)
+        {
+            if(arr[i]!=0)
+            {
+                arr[j]=arr[i];
+                j++;
+            }
+        }
+        while(j<arr.length)
+        {
+            arr[j]=0;
+            j++;
+        }
+        for(int i=0;i<arr.length;i++)
+        {
+            System.out.println(arr[i]);
+        }
+
+
+
     }
 }
