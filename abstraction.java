@@ -28,6 +28,26 @@ abstract class animal{
 //     }
 // }
 
+abstract class payment{
+    abstract void pay(int a);
+    void success(){
+        System.out.println("payment successful");
+    }   
+
+}
+
+class Upi extends payment{
+    void pay(int a){
+        System.out.println("paying "+a+" through UPI");
+    }
+}
+
+class netbanking extends payment{
+    void pay(int b){
+        System.out.println("paying "+b+" through netbanking");
+    }
+}
+
 
 public class abstraction {
     public static void main(String[] args) {
@@ -40,6 +60,14 @@ public class abstraction {
         //   s1.area();
         //   s2.area();
 
+        payment p1= new Upi();
+        payment p2= new netbanking();
+
+        p1.pay(100);
+        p1.success();
+
+        p2.pay(200);
+        p2.success();
 
     }
 }
