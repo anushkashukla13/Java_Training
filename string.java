@@ -61,5 +61,50 @@ public class string {
         // }
         // System.out.println(s2);
 
+        //count letter frequency in a string
+        // String s1="anushka";
+        // String s2="";
+        // for(int i=0;i<s1.length();i++)
+        // {
+        //    char ch=s1.charAt(i);
+        //    if(s2.indexOf(ch)==-1)
+        //    {
+        //     s2+=ch;
+        //     int count=0;
+        //     for(int j=0;j<s1.length();j++)
+        //     {
+        //         if(s1.charAt(j)==ch)
+        //         {
+        //             count++;
+        //         }
+        //     }
+        //     System.out.println(ch+" "+count);
+        //    }
+
+        // }
+
+        //count word frequency in a sentence
+        String s1="hi anushka hi";
+        String s2="";
+        String[] arr=s1.split(" ");
+        for(int i=0;i<arr.length;i++)
+        {
+           String word=arr[i];
+           if(s2.indexOf(word)==-1)
+           {
+            s2+=word+" ";
+            int count=0;
+            for(int j=0;j<arr.length;j++)
+            {
+                if(arr[j].equals(word))
+                {
+                    count++;
+                }
+            }
+            System.out.println(word+" "+count);
+           }
+        }   
+
+
     }
 }
