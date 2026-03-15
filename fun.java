@@ -35,19 +35,19 @@ public class fun {
         // String s2=new String("hello");
         // System.out.println(s1==s2);
 
+       //find first non repeating character in a string
+        String s1="anushka";
+        for(int i=0;i<s1.length();i++){
+            char ch=s1.charAt(i);
+            if(s1.indexOf(ch)==s1.lastIndexOf(ch)){
+                System.out.println(ch);
+                break;
+            }
+        }
+        
 
 
-        //frequency of each character in a string 
-        // String s1= "helloo";
-        // int count=0;
-
-        // for(int i=0;i<s1.length();i++)
-        // {
-        //     if(s1.charAt(i)==s1.charAt(i+1)){
-        //         count++;
-
-        //     }
-        // }
+       
 
 
 

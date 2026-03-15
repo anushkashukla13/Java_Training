@@ -84,27 +84,28 @@ public class string {
         // }
 
         //count word frequency in a sentence
-        String s1="hi anushka hi";
-        String s2="";
-        String[] arr=s1.split(" ");
-        for(int i=0;i<arr.length;i++)
-        {
-           String word=arr[i];
-           if(s2.indexOf(word)==-1)
-           {
-            s2+=word+" ";
-            int count=0;
-            for(int j=0;j<arr.length;j++)
-            {
-                if(arr[j].equals(word))
-                {
-                    count++;
-                }
-            }
-            System.out.println(word+" "+count);
-           }
-        }   
+        // String s1="hi anushka hi";
+        // String s2="";
+        // String[] arr=s1.split(" ");
+        // for(int i=0;i<arr.length;i++)
+        // {
+        //    String word=arr[i];
+        //    if(s2.indexOf(word)==-1)
+        //    {
+        //     s2+=word+" ";
+        //     int count=0;
+        //     for(int j=0;j<arr.length;j++)
+        //     {
+        //         if(arr[j].equals(word))
+        //         {
+        //             count++;
+        //         }
+        //     }
+        //     System.out.println(word+" "+count);
+        //    }
+        // }   
 
+        
 
     }
 }
