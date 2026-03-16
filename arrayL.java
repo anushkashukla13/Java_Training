@@ -40,7 +40,7 @@ public class arrayL {
         // System.out.println(map2.get(1));
         // System.out.println(map2.get(2));
         // String s="zssbcaaiiiiiiij";
-         HashMap<Integer, Integer> map = new HashMap<>();
+        // HashMap<Integer, Integer> map = new HashMap<>();
         
         // for(int i=0;i<s.length();i++)
         // {
@@ -66,6 +66,31 @@ public class arrayL {
     // HashMap<Integer, Integer> map = new HashMap<>();
     // for(int i =0; i<arr.length;i++){
       
+
+    //Write a program to reverse an ArrayList.
+    // ArrayList<Integer> List = new ArrayList<>();
+    // List.add(1);
+    // List.add(2);
+    // List.add(3);
+    // List.add(4);
+    // Collections.reverse(List);
+    // System.out.println(List);
+
+    // Remove all duplicate elements from an ArrayList.
+    ArrayList<Integer> List = new ArrayList<>();
+    List.add(1); 
+    List.add(2);
+    List.add(2);
+    List.add(3);
+    List.add(4);
+    List.add(4);
+    List.add(5);
+    System.out.println(List);
+    
+    HashSet<Integer> set = new HashSet<>(List);
+    List.clear();
+    List.addAll(set);
+    System.out.println(List);
 
 
     }
