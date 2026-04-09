@@ -46,28 +46,47 @@
 // }
 
 // Create two interfaces:
-interface Printable {
-    void print();
+// interface Printable {
+//     void print();
+// }
+
+// interface Showable {
+//     void show();
+// }
+
+// class Demo implements Printable, Showable {
+//     public void print() {
+//         System.out.println("Printing...");
+//     }
+
+//     public void show() {
+//         System.out.println("Showing...");
+//     }
+// }
+
+// public class Interface {
+//     public static void main(String[] args) {
+//         Demo d = new Demo();
+//         d.print();
+//         d.show();
+//     }
+// }
+
+// Create an interface Test with a variable x = 10. Try changing it inside a class.
+interface Test {
+    int x = 10; // by default: public static final
 }
 
-interface Showable {
-    void show();
-}
-
-class Demo implements Printable, Showable {
-    public void print() {
-        System.out.println("Printing...");
-    }
-
+class Demo implements Test {
     public void show() {
-        System.out.println("Showing...");
+        // x = 20;  ERROR (cannot change final variable)
+        System.out.println("Value of x: " + x);
     }
 }
 
 public class Interface {
     public static void main(String[] args) {
         Demo d = new Demo();
-        d.print();
         d.show();
     }
 }
