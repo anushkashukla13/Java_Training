@@ -73,20 +73,41 @@
 // }
 
 // Create an interface Test with a variable x = 10. Try changing it inside a class.
-interface Test {
-    int x = 10; // by default: public static final
+// interface Test {
+//     int x = 10; // by default: public static final
+// }
+
+// class Demo implements Test {
+//     public void show() {
+//         // x = 20;  ERROR (cannot change final variable)
+//         System.out.println("Value of x: " + x);
+//     }
+// }
+
+// public class Interface {
+//     public static void main(String[] args) {
+//         Demo d = new Demo();
+//         d.show();
+
+//     }
+// }
+interface A {
+    void show();
 }
 
-class Demo implements Test {
+abstract class B implements A {
+    // no implementation
+}
+
+class C extends B {
     public void show() {
-        // x = 20;  ERROR (cannot change final variable)
-        System.out.println("Value of x: " + x);
+        System.out.println("Hello");
     }
 }
 
 public class Interface {
     public static void main(String[] args) {
-        Demo d = new Demo();
-        d.show();
+        C obj = new C();
+        obj.show();
     }
 }
