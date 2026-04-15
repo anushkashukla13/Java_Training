@@ -91,23 +91,51 @@
 
 //     }
 // }
+// interface A {
+//     void show();
+// }
+
+// abstract class B implements A {
+//     // no implementation
+// }
+
+// class C extends B {
+//     public void show() {
+//         System.out.println("Hello");
+//     }
+// }
+
+// public class Interface {
+//     public static void main(String[] args) {
+//         C obj = new C();
+//         obj.show();
+
+//     }
+// }
+
+// Interface + Inheritance Chain
 interface A {
     void show();
 }
 
-abstract class B implements A {
-    // no implementation
+interface B extends A {
+    void display();
 }
 
-class C extends B {
+class Demo implements B {
     public void show() {
-        System.out.println("Hello");
+        System.out.println("Show method");
+    }
+
+    public void display() {
+        System.out.println("Display method");
     }
 }
 
 public class Interface {
     public static void main(String[] args) {
-        C obj = new C();
-        obj.show();
+        Demo d = new Demo();
+        d.show();
+        d.display();
     }
 }
